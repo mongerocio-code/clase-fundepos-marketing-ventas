@@ -1,0 +1,510 @@
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karo Event & Ballon Studio | Decoración de Eventos en Costa Rica</title>
+  <meta name="description" content="Karo Event & Ballon Studio: diseño, producción y decoración integral de eventos sociales, corporativos y comerciales en Costa Rica.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --cream:#fff8ef;
+      --sand:#ead7c4;
+      --blush:#f4c7bd;
+      --sage:#cfd8c2;
+      --sky:#c9dbea;
+      --terracotta:#bf735e;
+      --coffee:#5b4236;
+      --ink:#3f332d;
+      --gold:#d8b46a;
+    }
+
+    body{
+      font-family:"Segoe UI", sans-serif;
+      background:var(--cream);
+      color:var(--ink);
+    }
+
+    h1,h2,h3,.brand{
+      font-family:Georgia, "Times New Roman", serif;
+      color:var(--coffee);
+    }
+
+    .navbar{
+      background:rgba(255,248,239,.95);
+      backdrop-filter:blur(8px);
+    }
+
+    .hero{
+      min-height:92vh;
+      display:flex;
+      align-items:center;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(244,199,189,.55), transparent 28%),
+        radial-gradient(circle at 80% 15%, rgba(207,216,194,.65), transparent 28%),
+        linear-gradient(135deg,#fff8ef 0%,#ead7c4 55%,#d8b46a 130%);
+    }
+
+    .badge-soft{
+      background:#fff3df;
+      color:var(--coffee);
+      border:1px solid rgba(91,66,54,.15);
+    }
+
+    .btn-western{
+      background:var(--terracotta);
+      color:white;
+      border-radius:50px;
+      padding:.9rem 1.3rem;
+      font-weight:700;
+      border:none;
+    }
+
+    .btn-western:hover{
+      background:#a9604f;
+      color:white;
+    }
+
+    .btn-outline-western{
+      border:1px solid var(--coffee);
+      color:var(--coffee);
+      border-radius:50px;
+      padding:.9rem 1.3rem;
+      font-weight:700;
+    }
+
+    .promo-card{
+      background:linear-gradient(135deg,#fff 0%,#fff0dc 45%,#f4c7bd 100%);
+      border:2px dashed var(--terracotta);
+      border-radius:28px;
+      padding:24px;
+      box-shadow:0 25px 50px rgba(91,66,54,.16);
+    }
+
+    .promo-number{
+      font-size:4rem;
+      line-height:1;
+      font-weight:900;
+      color:var(--terracotta);
+    }
+
+    .section{
+      padding:82px 0;
+    }
+
+    .card-soft{
+      background:rgba(255,255,255,.72);
+      border:1px solid rgba(91,66,54,.12);
+      border-radius:24px;
+      box-shadow:0 16px 35px rgba(91,66,54,.08);
+      height:100%;
+    }
+
+    .icon-circle{
+      width:54px;
+      height:54px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:var(--sand);
+      color:var(--coffee);
+      font-size:1.45rem;
+    }
+
+    .price{
+      font-size:1.8rem;
+      font-weight:900;
+      color:var(--terracotta);
+    }
+
+    .western-strip{
+      background:linear-gradient(90deg,var(--coffee),var(--terracotta),var(--gold));
+      height:7px;
+      border-radius:20px;
+    }
+
+    .cta{
+      background:linear-gradient(135deg,var(--coffee),#7c5746);
+      color:white;
+      border-radius:34px;
+    }
+
+    .cta h2{
+      color:white;
+    }
+
+    .floating-wa{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:999;
+      background:#25D366;
+      color:white;
+      width:62px;
+      height:62px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      font-size:2rem;
+      box-shadow:0 12px 28px rgba(0,0,0,.25);
+      text-decoration:none;
+    }
+
+    footer{
+      background:#3f332d;
+      color:#f8f3ee;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand brand fw-bold" href="#">Karo Event & Ballon Studio</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#paquetes">Paquetes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proceso">Proceso</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero pt-5">
+  <div class="container py-5">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-7">
+        <span class="badge badge-soft rounded-pill px-3 py-2 mb-3">
+          Decoración social · corporativa · comercial
+        </span>
+
+        <h1 class="display-3 fw-bold mb-3">
+          Diseñamos eventos que se sienten, se viven y se recuerdan.
+        </h1>
+
+        <p class="lead mb-4">
+          Creamos decoraciones temáticas, arte con globos, escenografía y experiencias visuales para cumpleaños, bodas, baby showers, revelaciones, eventos corporativos, ferias y activaciones de marca en Costa Rica.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3">
+          <a href="https://wa.me/50683020701?text=Hola%20Karo%20Event%20%26%20Ballon%20Studio%2C%20quiero%20recibir%20la%20promoci%C3%B3n%20para%20mi%20evento." class="btn btn-western btn-lg">
+            <i class="bi bi-whatsapp me-2"></i>Quiero mi descuento
+          </a>
+
+          <a href="#paquetes" class="btn btn-outline-western btn-lg">
+            Ver paquetes
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="promo-card text-center">
+          <div class="western-strip mb-4"></div>
+
+          <p class="text-uppercase fw-bold mb-1">Oferta inicial</p>
+
+          <div class="promo-number">10</div>
+
+          <h2 class="fw-bold">primeros clientes</h2>
+
+          <p class="fs-5">
+            que envíen un mensaje por WhatsApp reciben un <strong>descuento especial</strong> para su evento.
+          </p>
+
+          <p class="small text-muted mb-3">
+            Aplica para cotizaciones nuevas. Cupos limitados.
+          </p>
+
+          <a class="btn btn-western w-100" href="https://wa.me/50683020701?text=Hola%20quiero%20aplicar%20al%20descuento%20de%20los%20primeros%2010%20clientes.">
+            Enviar WhatsApp al 506 8302-0701
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+
+      <div class="col-lg-6">
+        <h2 class="display-6 fw-bold">
+          Tu celebración merece verse espectacular.
+        </h2>
+
+        <p>
+          Karo Event & Ballon Studio transforma espacios en experiencias inolvidables mediante diseño creativo, ambientación personalizada, materiales de calidad y atención al detalle.
+        </p>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="card-soft p-4">
+              <strong>Cobertura</strong><br>Costa Rica
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card-soft p-4">
+              <strong>Eventos</strong><br>10 a 1,000+ personas
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card-soft p-4">
+              <strong>Estilo</strong><br>Personalizado
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card-soft p-4">
+              <strong>Modalidad</strong><br>Presencial
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="section bg-white">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="badge badge-soft rounded-pill px-3 py-2">Servicios</span>
+      <h2 class="display-6 fw-bold mt-3">
+        Decoración para cada tipo de evento
+      </h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card-soft p-4">
+          <div class="icon-circle mb-3"><i class="bi bi-cake2"></i></div>
+          <h3>Cumpleaños</h3>
+          <p>Infantiles, juveniles, adultos, fiestas de 15, 18, 50 y 60 años, aniversarios y celebraciones familiares.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card-soft p-4">
+          <div class="icon-circle mb-3"><i class="bi bi-balloon-heart"></i></div>
+          <h3>Baby Shower & Gender Reveal</h3>
+          <p>Decoración temática, mesas de dulces, espacios fotográficos y revelaciones memorables.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card-soft p-4">
+          <div class="icon-circle mb-3"><i class="bi bi-gem"></i></div>
+          <h3>Bodas y eventos especiales</h3>
+          <p>Ceremonia, recepción, mesa principal, arreglos, decoración romántica y pedidas de mano.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card-soft p-4">
+          <div class="icon-circle mb-3"><i class="bi bi-briefcase"></i></div>
+          <h3>Corporativos</h3>
+          <p>Lanzamientos, conferencias, convenciones, integraciones, premiaciones y eventos de fin de año.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card-soft p-4">
+          <div class="icon-circle mb-3"><i class="bi bi-shop"></i></div>
+          <h3>Stands y ferias</h3>
+          <p>Diseño de stands, branding visual, material POP, activaciones de marca y espacios interactivos.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card-soft p-4">
+          <div class="icon-circle mb-3"><i class="bi bi-stars"></i></div>
+          <h3>Servicios complementarios</h3>
+          <p>DJ, sonido, iluminación, pantallas, fotocabina, plataforma 360°, shows, personajes y souvenirs.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="paquetes" class="section">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="badge badge-soft rounded-pill px-3 py-2">Paquetes</span>
+      <h2 class="display-6 fw-bold mt-3">
+        Opciones para diferentes presupuestos
+      </h2>
+      <p>El precio final puede variar según temática, ubicación, montaje y cantidad de invitados.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+        <div class="card-soft p-4">
+          <h3>Básico</h3>
+          <div class="price">₡75,000 – ₡250,000</div>
+          <ul class="mt-3">
+            <li>Decoración sencilla</li>
+            <li>Arco básico</li>
+            <li>Backing pequeño</li>
+            <li>Mesa principal</li>
+            <li>Centros de mesa básicos</li>
+          </ul>
+          <a class="btn btn-outline-western w-100" href="https://wa.me/50683020701?text=Hola%2C%20quiero%20cotizar%20el%20paquete%20B%C3%A1sico.">
+            Cotizar básico
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card-soft p-4 border border-2" style="border-color:var(--terracotta)!important">
+          <span class="badge text-bg-warning mb-2">Más solicitado</span>
+          <h3>Intermedio</h3>
+          <div class="price">₡250,000 – ₡800,000</div>
+          <ul class="mt-3">
+            <li>Diseño personalizado</li>
+            <li>Arcos orgánicos</li>
+            <li>Decoración temática</li>
+            <li>Mobiliario decorativo</li>
+            <li>Decoración fotográfica</li>
+          </ul>
+          <a class="btn btn-western w-100" href="https://wa.me/50683020701?text=Hola%2C%20quiero%20cotizar%20el%20paquete%20Intermedio.">
+            Cotizar intermedio
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card-soft p-4">
+          <h3>Premium</h3>
+          <div class="price">₡800,000 – ₡3,500,000+</div>
+          <ul class="mt-3">
+            <li>Diseño exclusivo</li>
+            <li>Escenografía personalizada</li>
+            <li>Producción completa</li>
+            <li>Iluminación profesional</li>
+            <li>Supervisión técnica</li>
+          </ul>
+          <a class="btn btn-outline-western w-100" href="https://wa.me/50683020701?text=Hola%2C%20quiero%20cotizar%20el%20paquete%20Premium.">
+            Cotizar premium
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="proceso" class="section bg-white">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+
+      <div class="col-lg-5">
+        <h2 class="display-6 fw-bold">
+          Así hacemos realidad tu evento
+        </h2>
+        <p>Desde la idea inicial hasta el montaje y desmontaje completo.</p>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="card-soft p-4">
+              <strong>1. Concepto</strong>
+              <p class="mb-0">Reunión inicial, temática, colores y moodboard.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card-soft p-4">
+              <strong>2. Propuesta</strong>
+              <p class="mb-0">Diseño visual, presupuesto y ajustes.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card-soft p-4">
+              <strong>3. Producción</strong>
+              <p class="mb-0">Materiales, estructuras, globos y logística.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card-soft p-4">
+              <strong>4. Montaje</strong>
+              <p class="mb-0">Instalación, supervisión y desmontaje.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="section">
+  <div class="container">
+    <div class="cta p-5">
+      <div class="row align-items-center g-4">
+
+        <div class="col-lg-8">
+          <h2 class="display-6 fw-bold">
+            ¿Lista para crear tu evento soñado?
+          </h2>
+          <p class="lead mb-0">
+            Escríbenos por WhatsApp y recibe asesoría personalizada para tu celebración.
+          </p>
+        </div>
+
+        <div class="col-lg-4 text-lg-end">
+          <a class="btn btn-light btn-lg rounded-pill fw-bold" href="https://wa.me/50683020701?text=Hola%20Karo%20Event%20%26%20Ballon%20Studio%2C%20quiero%20informaci%C3%B3n%20para%20mi%20evento.">
+            <i class="bi bi-whatsapp me-2"></i>506 8302-0701
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <div>
+      <strong>Karo Event & Ballon Studio</strong><br>
+      <span class="small">Diseño, producción y decoración integral de eventos.</span>
+    </div>
+
+    <div class="small">
+      Costa Rica · Social · Corporativo · Comercial
+    </div>
+  </div>
+</footer>
+
+<a class="floating-wa" href="https://wa.me/50683020701?text=Hola%20quiero%20cotizar%20mi%20evento%20y%20aplicar%20al%20descuento." aria-label="WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
